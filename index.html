@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Search</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./adaptive.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="submit" class="form">
+        <img src="./img/search-icon.svg" alt="" />
+        <input
+          class="username-input"
+          type="text"
+          placeholder="Search GitHub username..."
+        />
+        <button class="username-button">Search</button>
+      </form>
+      <section class="user">
+        <div class="user-wrapper">
+          <div class="user-info">
+            <div class="user-info__header">
+              <div class="user-info__profile">
+                <div class="user__image"></div>
+                <div class="user__about">
+                  <div class="user__name"></div>
+                  <div class="user__date"></div>
+                </div>
+              </div>
+              <div class="user__tag"></div>
+              <div class="user__bio"></div>
+              <div class="user__block">
+                <div class="user__block-item">
+                  <div class="user__block-title">Repos</div>
+                  <div class="user__block-repo --bold"></div>
+                </div>
+                <div class="user__block-item">
+                  <div class="user__block-title">Followers</div>
+                  <div class="user__block-followers --bold"></div>
+                </div>
+                <div class="user__block-item">
+                  <div class="user__block-title">Following</div>
+                  <div class="user__block-following --bold"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="user__footer">
+              <div class="user__footer-item">
+                <img src="./img/location.png" />
+                <div class="user__footer-location"></div>
+              </div>
+              <div class="user__footer-item">
+                <img src="./img/twitter.png" />
+                <div class="user__footer-twitter"></div>
+              </div>
+
+              <div class="user__footer-item">
+                <img src="./img/work.png" />
+                <div class="user__footer-company"></div>
+              </div>
+              <div class="user__footer-item">
+                <img src="./img/link.png" />
+                <div class="user__footer-url"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

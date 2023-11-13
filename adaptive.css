@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+  .user__about {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .user__block-title {
+    font-size: 12px;
+  }
+
+  .--bold {
+    font-weight: var(--fw-bold);
+    font-size: 18px;
+  }
+
+  .user-wrapper {
+    padding: 20px 0px;
+  }
+
+  .user-info {
+    padding: 0 10px;
+  }
+
+  .username-button {
+    font-size: 14px;
+  }
+}

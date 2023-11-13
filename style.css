@@ -1,0 +1,163 @@
+:root {
+  --ff: "Space Mono", monospace;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  /* colors */
+
+  --dark-blue: #141c2f;
+  --light-blue: #0079fe;
+  --blue: #1f2a48;
+  --accent-blue: #0178fd;
+
+  --gray: #a0a5b2;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: var(--ff);
+  color: var(--white);
+  padding: 0px 25px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 650px;
+  margin: 20px auto;
+}
+.form {
+  width: 100%;
+  height: 70px;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  padding: 10px 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.form img {
+  width: 25px;
+  height: 25px;
+}
+.username-input {
+  height: 100%;
+  background-color: var(--blue);
+  border: none;
+  font-family: var(--ff);
+  font-size: 16px;
+  padding-left: 20px;
+  outline: none;
+  color: var(--white);
+  flex-grow: 1;
+}
+
+::-webkit-input-placeholder {
+  color: var(--white);
+}
+
+.username-button {
+  width: 100px;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+
+  font-family: var(--ff);
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+.user {
+  margin-top: 20px;
+  width: 100%;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  padding: 10px 10px;
+}
+
+.user-wrapper {
+  display: none;
+  padding: 20px 20px;
+}
+
+.user-info {
+  width: 100%;
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user__image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+.user__about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+.user__name {
+  color: var(--white);
+  font-weight: var(--fw-bold);
+  font-size: 18px;
+}
+.user__date {
+  color: var(--gray);
+  font-size: 14px;
+}
+.user__tag {
+  color: var(--accent-blue);
+}
+
+.user__block {
+  width: 100%;
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user__bio {
+  color: var(--gray);
+  padding: 20px 0;
+}
+
+.--bold {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+}
+
+.user__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user__footer-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.user__footer-item img {
+  margin-right: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}

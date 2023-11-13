@@ -25,4 +25,8 @@
   .username-button {
     font-size: 14px;
   }
+
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
 }

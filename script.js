@@ -1,6 +1,6 @@
 let form = document.querySelector(".form");
 let input = document.querySelector(".username-input");
-let section = document.querySelector(".user-wrapper");
+let section = document.querySelector(".user");
 
 form.addEventListener("submit", async function (e) {
   e.preventDefault();

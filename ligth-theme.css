@@ -18,12 +18,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: black;
 }
 
 body {
-  background-color: var(--dark-blue);
+  background-color: whitesmoke;
   font-family: var(--ff);
-  color: var(--white);
   padding: 0px 25px;
 }
 
@@ -35,12 +35,15 @@ body {
 .form {
   width: 100%;
   height: 70px;
-  background-color: var(--blue);
+  background-color: var(--white);
   border-radius: 1rem;
   padding: 10px 10px;
-
   display: flex;
   align-items: center;
+
+  -webkit-box-shadow: 0px 1px 26px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 1px 26px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 1px 26px 0px rgba(34, 60, 80, 0.2);
 }
 
 .form img {
@@ -49,18 +52,17 @@ body {
 }
 .username-input {
   height: 100%;
-  background-color: var(--blue);
+  background-color: var(--white);
   border: none;
   font-family: var(--ff);
   font-size: 16px;
   padding-left: 20px;
   outline: none;
-  color: var(--white);
   flex-grow: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: var(--white);
+  color: black;
 }
 
 .username-button {
@@ -75,25 +77,22 @@ body {
 
   background-color: var(--light-blue);
   color: var(--white);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.username-button:hover {
-  background-color: #0465cc;
 }
 
 .user {
   margin-top: 20px;
   width: 100%;
-  background-color: var(--blue);
+  background-color: white;
   border-radius: 1rem;
   padding: 10px 10px;
 
-  display: none;
+  -webkit-box-shadow: 0px 1px 26px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 1px 26px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 1px 26px 0px rgba(34, 60, 80, 0.2);
 }
 
 .user-wrapper {
+  display: none;
   padding: 20px 20px;
 }
 
@@ -110,8 +109,6 @@ body {
   border-radius: 50%;
   display: block;
   margin: 20px auto;
-  margin-top: 0;
-  border: 5px solid white;
 }
 
 .user__about {
@@ -121,12 +118,11 @@ body {
   vertical-align: middle;
 }
 .user__name {
-  color: var(--white);
   font-weight: var(--fw-bold);
   font-size: 18px;
 }
 .user__date {
-  color: var(--gray);
+  color: gray;
   font-size: 14px;
 }
 .user__tag {
@@ -135,12 +131,15 @@ body {
 
 .user__block {
   width: 100%;
-  background-color: var(--dark-blue);
+  background-color: white;
   border-radius: 10px;
   padding: 10px 25px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 46px 4px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 46px 4px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 46px 4px rgba(34, 60, 80, 0.2);
 }
 
 .user__bio {
